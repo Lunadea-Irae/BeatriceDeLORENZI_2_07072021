@@ -10,16 +10,18 @@
 </head>
 <body>
     <header>
-        <figure id="logo"><img src="images/logo/Reservia.svg"><!-- ne marche pas sur les navigateurs mobiles natifs --></figure>
+        <figure id="logo"><img src="images/logo/Reservia.svg" alt="Logo Reservia"><!-- ne marche pas sur les navigateurs mobiles natifs --></figure>
         <a href="#hebergements" class="ancres">Hébergements</a>
-        <a href="#activites" class="ancres"><summary>Activités</summary></a>
-        <a href=""><summary>S'inscrire</summary></a>
+        <a href="#activites" class="ancres">Activités</a>
+        <a href="">S'inscrire</a>
     </header>
     <nav>
-        <p>
+        
+        <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve.</h1>
-            En plein centre ville ou en pleine nature.
-        </p>
+            <span>En plein centre ville ou en pleine nature.</span>
+        </div>
+        
         <form><i class="fas fa-map-marker-alt"></i><input type="search"><input type="button" value="Rechercher"></form>
         <div id="filters">
             <h1>Filtres</h1>
@@ -31,9 +33,9 @@
         <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville.</p>
     </nav>
     <section id="hebergements">
-        <main>
+        <div>
             <h1>Hébergements à Marseille</h1>
-            <main>
+            <div>
                 <a href=""><article>
                     <img src="images/hebergements/Auberge_La_Cannebiere.jpg" alt="Auberge la Cannebière">
                     <h3>Auberge La Cannebière</h3>
@@ -106,12 +108,12 @@
                         <i class="fas fa-star"></i>
                     </figure>
                 </article></a>
-            </main>
+            </div>
             <button>Afficher plus</button>
-        </main>
+        </div>
         <aside>
             <header><h1>Les plus populaires</h1><i class="fas fa-chart-line"></i></header>
-            <main>
+            <div>
                 <a href=""><article>
                     <img src="images/hebergements/Hotel_le_soleil_du_matin.jpg" alt="Hôtel Le soleil du matin">
                     <h3>Hôtel Le soleil du matin</h3>
@@ -148,12 +150,12 @@
                         <i class="far fa-star"></i>
                     </figure>
                 </article></a>
-            </main>
+            </div>
         </aside>
     </section>
     <section id="activites">
         <h1>Activités à Marseille</h1>
-        <main>
+        <div>
             <section>
                 <a href=""><article>
                     <img src="images/activites/Vieux_Port.jpg" alt="Vieux Port">
@@ -182,11 +184,11 @@
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </article></a>
                 <a href=""><article>
-                    <img src="images/activites/Parc Longchamp.jpg" alt="Parc Longchamp">
+                    <img src="images/activites/Parc_Longchamp.jpg" alt="Parc Longchamp">
                     <h3>Parc Longchamp</h3>
                 </article></a>
             </section>
-        </main>
+        </div>
     </section>
     <footer>
         <nav>
@@ -208,7 +210,7 @@
             <h2>Assistance</h2>
             <ul>
                 <li><a href="">Centre d'aide</a>
-                <li><a href="">Nous contacter</a></li></li>
+                <li><a href="">Nous contacter</a></li>
             </ul>
         </nav>
     </footer>

@@ -12,7 +12,7 @@ body {
 }
 /*----------------------------- A RETIRER -----------------------------*/
 
-header, #filters, footer, #hebergements, #hebergements main main, #activites main {
+header, #filters, footer, #hebergements, #hebergements div div, #activites div {
     display:flex;
     flex-wrap: wrap;
 }
@@ -28,11 +28,11 @@ aside header{
     justify-content: space-between;
 }
 
-#hebergements main {
+#hebergements div {
     flex : 2
 }
 
-#hebergements main main a{
+#hebergements div div a{
     flex: 33%;
 }
 
