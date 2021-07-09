@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+
+ /*----------------------------- A RETIRER -----------------------------*/   
+body {
+    background-image: url("Desktop - 1.png");
+    background-size: cover;
+}
+/*----------------------------- A RETIRER -----------------------------*/
+
+header, #filters, footer, #hebergements, #hebergements main main, #activites main {
+    display:flex;
+    flex-wrap: wrap;
+}
+header #logo {
+    flex: 6;
+}
+
+header a,#hebergements aside {
+    flex: 1;
+}
+
+aside header{
+    justify-content: space-between;
+}
+
+#hebergements main {
+    flex : 2
+}
+
+#hebergements main main a{
+    flex: 33%;
+}
+
+article b::before{
+content: "Nuit à partir de ";
+}
+
+ /*----------------------------- A RETIRER -----------------------------*/   
+section img{
+    display: none;
+}
+ /*----------------------------- A RETIRER -----------------------------*/   
