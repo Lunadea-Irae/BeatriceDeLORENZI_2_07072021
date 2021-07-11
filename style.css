@@ -1,3 +1,6 @@
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
 
 
  /*----------------------------- A RETIRER -----------------------------*/   
-body {
+/*body {
     background-image: url("Desktop - 1.png");
     background-size: cover;
 }
@@ -16,6 +19,10 @@ header, #filters, footer, #hebergements, #hebergements div div, #activites div {
     display:flex;
     flex-wrap: wrap;
 }
+
+
+
+
 header #logo {
     flex: 6;
 }
@@ -23,6 +30,10 @@ header #logo {
 header a,#hebergements aside {
     flex: 1;
 }
+
+
+
+
 
 aside header{
     justify-content: space-between;
@@ -45,3 +56,36 @@ section img{
     display: none;
 }
  /*----------------------------- A RETIRER -----------------------------*/   
+
+
+
+ /*style smartphones et petites tablettes en portrait*/
+
+
+@media screen and (max-width:799px) {
+
+    
+
+    header {
+        justify-content: space-between;
+    }
+    header #logo{
+        min-width: 50%;
+
+    }
+    .ancres{
+        order: 4;
+        flex: 50%;
+        text-align: center;
+    }
+
+    #filters h1, #hebergements aside, footer nav, #hebergements div div a, #activites div section{
+        flex: 100%;
+    }
+
+    #hebergements aside{
+        order: -1;
+    }
+
+
+}
