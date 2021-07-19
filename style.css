@@ -9,52 +9,234 @@
 
 
  /*----------------------------- A RETIRER -----------------------------*/   
-/*body {
+body {
     background-image: url("Desktop - 1.png");
     background-size: cover;
+
+
 }
 /*----------------------------- A RETIRER -----------------------------*/
 
-header, #filters, footer, #hebergements, #hebergements div div, #activites div {
+/*HEADER*/
+
+#filters, footer, #hebergements, #hebergements div div, #activites div {
     display:flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 120px;
+    margin: 0 48px 0 70px;
+}
+
+
+
+
+ #logo {
+    flex: 6;
+    margin-top: 60px;
+    height: -webkit-fill-available ;
+}
+
+#logo img {
+    height: -webkit-fill-available ;
+}
+
+header a {
+    flex: 1;
+    text-align: center;
+    font-size: 1.35em;
+    padding: 60px 0 30px 0;
+
+}
+
+header a:hover{
+    border-top: #0065FC solid 2px;
+    color: #0065FC;
+}
+
+header a:last-child{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+
+/*HEADER OK*/
+
+/*NAV*/
+
+h1,h2{
+    font-size: 1.7em;
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+}
+
+nav div{
+    margin: 46px 74px 0;
+}
+nav div span{
+    font-size: 1.3em;
+    letter-spacing: 0.007em;
+    margin-top: 207px;
+    line-height: 2;
+}
+
+nav form {
+    margin: 20px 73px 0;
+    height: 68px;
+}
+
+.fas.fa-map-marker-alt{
+    height: -webkit-fill-available!important ;
+}
+
+.fa-map-marker-alt::before {
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 1.5em;
+    height: -webkit-fill-available;
+    padding: 18px 25px 26px;
+    border-radius: 30% 0 0 30%;
+}
+
+nav form input{
+        height: -webkit-fill-available ;
+    }
+
+nav form input:last-child{
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    font-size: 1.35em;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    width: 180px;
+}
+
+nav form input[type=search]:nth-child(2){
+    width: 17.6%;
+    border: #F2F2F2 1px solid;
+    font-size: 1.55em;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+#filters {
+    margin: 42px 0;
+    align-items: baseline;
+    margin-left: 82px;
+}
+
+#filters h1{
+    margin-right: 36px;
+    letter-spacing: 0;
+}
+
+
+#filters button {
+    background-color: white;
+    margin: 0 35px 0 10px;
+    font-size: 1.4em;
+    font-weight: bolder;
+    padding: 15px 29px 15px 0px;
+    border: #F2F2F2 3px solid;
+    border-radius: 70px / 70px;
+    letter-spacing: 0.05em;
+}
+
+#filters button i.fas::before{
+    background-color: #DEEBFF;
+    padding: 23px;
+    color: #0065FC;
+    border-radius: 50%;
+    margin: 0 17px 0 -17px;
+}
+
+nav p{
+    margin: 44px 0 0 78px;
+    font-size: 1.34em;
+}
+
+.fa-info::before{
+    padding: 8px 12px;
+    border: #f2f2f2 2px solid;
+    border-radius: 50%;
+    font-size: 0.65em;
+    color: #0065FC;
+    margin: 0 12px 0 0;
+}
+
+
+/*NAV OK*/
+
+#hebergements {
+    margin: 55px 64px;
+}
+
+
+#hebergements > div{
+    background-color: #f2f2f2;
+    margin: 0 28px 0 0;
+    flex: 2;
+    border-radius: 31px;
+    padding: 55px;
+
+}
+
+
+
+
+#hebergements div div {
+    
+    justify-content: space-between;
+}
+
+#hebergements div div a{
+    background-color: white;
+    width: 29.5%;
+    margin: 27px 0;
+    padding: 6px;
+    border-radius: 22px;
+}
+
+section img{
+    object-fit: cover;
+    width: 100%;
+    height: 154px;
+    border-radius: 22px 22px 0 0;
+}
+
+
+
+/*ASIDE HEBERGEMENT*/
+
+
+
+#hebergements aside {
+    flex: 1.05;
+    margin: 0 0 0 23px;
+}
+
+
+
+
+aside div:first-child{
+    justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
 }
 
 
 
 
-header #logo {
-    flex: 6;
-}
 
-header a,#hebergements aside {
-    flex: 1;
-}
-
-
-
-
-
-aside header{
-    justify-content: space-between;
-}
-
-#hebergements div {
-    flex : 2
-}
-
-#hebergements div div a{
-    flex: 33%;
-}
-
-article b::before{
-content: "Nuit à partir de ";
-}
 
  /*----------------------------- A RETIRER -----------------------------*/   
-section img{
-    display: none;
-}
+
  /*----------------------------- A RETIRER -----------------------------*/   
 
 
@@ -64,7 +246,12 @@ section img{
 
 @media screen and (max-width:799px) {
 
-    
+/*----------------------------- A RETIRER -----------------------------*/
+    body {
+        background-image: url("iPhone 8 - 1.png");
+    }
+
+/*----------------------------- A RETIRER -----------------------------*/
 
     header {
         justify-content: space-between;
