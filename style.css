@@ -79,7 +79,18 @@ section#activites{
         flex-basis: 100%;
     }
 
-    footer {
-        display: flex;
-        align-content: stretch;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     }
+
+
+
+
+
+/*SMARTPHONES ET TABLETTES*/
+
+@media screen and (max-width:425px) {
+    
+}
