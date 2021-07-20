@@ -9,122 +9,139 @@ SOMMAIRE
         section
 
 */
-/*Mise a 0 des marges par défaut et du font demandé*/
-                                    
-* {
-margin: 0;
-padding: 0;
-font-family: 'Open Sans', sans-serif;
-}
-a {
-    text-decoration: none;
-}
-/*----------------------------- A RETIRER -----------------------------*/
-/*body {
-    background-image: url("Desktop - 1.png");
-    background-size: cover;
-}*/
-                                    
 
+                                        /*Mise a 0 des marges par défaut et du font demandé*/
 
+                                        * {
+                                            margin: 0;
+                                            padding: 0;
+                                            font-family: 'Open Sans', sans-serif;
+                                        }
 
-section img, aside img {
-    display: none;
-}
-/*----------------------------- A RETIRER -----------------------------*/
+                                        a {
+                                            text-decoration: none;
+                                            color: black;
+                                        }
 
+                                        /*----------------------------- A RETIRER -----------------------------*/
 
+                                        body {
+                                            background-image: url("Desktop - 1.png");
+                                            background-size: cover;
+                                        }
 
-/*HEADER*/
+                                        section img, aside img {
+                                            display: none;
+                                        }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+                                        /*----------------------------- A RETIRER -----------------------------*/
 
-    header nav ul {
-        display: flex;
-    }
+                                        /*HEADER*/
 
-        li {
-            list-style: none;
-        }
+                                        header {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: flex-start;
+                                            margin: 0 3.1%;
+                                        }
 
-div{
-    display: flex;
-    flex-wrap: wrap;
-}
+                                        header img {
+                                            padding: 3.2% 0.5% 0;
+                                            height: 3.2vw;
+                                        }
 
-section#hebergements{
-    flex: 2 ;
-    display: flex;
-    flex-wrap: wrap;
-}
+                                        header nav ul {
+                                            display: flex;
+                                            font-size: 1.12vw;
+                                        }
 
-    h2{
-        flex-basis: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    section#hebergements a {
-        flex-basis: 30%;
-    }
+                                        li {
+                                            list-style: none;
+                                        }
 
-aside h2 i{
-    justify-self: flex-end;
-}
+                                        header nav ul li {
+                                            padding: 3.2vw 2.38vw 0;
+                                        }
 
-section#activites{
-    display: flex;
-    flex-wrap: wrap;
-}
-    section#activites h2{
-        flex-basis: 100%;
-    }
+                                        header nav ul li:hover {
+                                            border-top: #0065FC solid 2px;
+                                        }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+                                        header nav ul li:hover a {
+                                            color: #0065FC;
+                                        }
 
+                                        header nav ul li:last-child a {
+                                            font-weight: bolder;
+                                            color: #0065FC;
+                                        }
 
+                                        div {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                        }
 
+                                        section#hebergements {
+                                            flex: 2;
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                        }
 
+                                        h2 {
+                                            flex-basis: 100%;
+                                            display: flex;
+                                            justify-content: space-between;
+                                        }
 
-/*SMARTPHONES ET TABLETTES*/
+                                        section#hebergements a {
+                                            flex-basis: 30%;
+                                        }
 
-@media screen and (max-width:425px) {
-    header {
-        display:block ;
-    }
+                                        aside h2 i {
+                                            justify-self: flex-end;
+                                        }
 
-        header nav ul li{
-            flex-basis: 50%;
-            text-align: center;
-        }
-        header nav ul li:last-child{
-            position: absolute;
-            top : 0;
-            right: 0;
-        }
+                                        section#activites {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                        }
 
-    section:nth-child(2) form p {
-        display: flex;
-        flex-wrap: wrap;
-    }
+                                        section#activites h2 {
+                                            flex-basis: 100%;
+                                        }
 
-    section:nth-child(2) form p span {
-        flex-basis: 100%;
-    }
+                                        footer {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: space-between;
+                                        }
 
-    div section#hebergements{
-        order: 1;
-    }
+                                        /*SMARTPHONES ET TABLETTES*/
 
-    section#hebergements a, section#activites a, footer nav {
-        flex-basis: 100%;
-    }
-    
-}
+                                        @media screen and (max-width:425px) {
+                                            header {
+                                                display: block;
+                                            }
+                                            header nav ul li {
+                                                flex-basis: 50%;
+                                                text-align: center;
+                                            }
+                                            header nav ul li:last-child {
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                            }
+                                            section:nth-child(2) form p {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                            }
+                                            section:nth-child(2) form p span {
+                                                flex-basis: 100%;
+                                            }
+                                            div section#hebergements {
+                                                order: 1;
+                                            }
+                                            section#hebergements a, section#activites a, footer nav {
+                                                flex-basis: 100%;
+                                            }
+                                        }
