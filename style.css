@@ -232,7 +232,7 @@ SOMMAIRE
                                         /*SMARTPHONES ET TABLETTES*/
 
                                         @media screen and (max-width:425px) {
-                                            body {
+                                            /*body {
                                                 background-image: url("iPhone 8 - 1.png");
                                                 background-size: cover;
                                             }
