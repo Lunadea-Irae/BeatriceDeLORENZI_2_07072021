@@ -76,10 +76,97 @@ SOMMAIRE
                                             color: #0065FC;
                                         }
 
+                                        /*Section 1 : section de recherche*/
+
+                                        section:nth-child(2) {
+                                            margin: 2.3vw 3.8vw;
+                                        }
+
+                                        h1 {
+                                            font-size: 1.56vw;
+                                        }
+
+                                        p {
+                                            font-size: 1.1vw;
+                                            margin: 0.3vw 0px;
+                                        }
+
+                                        form {
+                                            margin: 1.3vw 0 0 0;
+                                        }
+
+                                        form>*, form p>button {
+                                            font-size: 1.3vw;
+                                        }
+
+                                        form i {
+                                            padding: 1.1vw 1.2vw;
+                                            background: #F2F2F2;
+                                            border-bottom-left-radius: 30%;
+                                            border-top-left-radius: 30%;
+                                        }
+
+                                        form input[type="search"] {
+                                            margin: 0 0vw 0px -0.5vw;
+                                            padding: 0.8vw 0.9vw;
+                                            border: #f2f2f2 solid 1px;
+                                        }
+
+                                        form input[type="submit"] {
+                                            background-color: #0065FC;
+                                            border: none;
+                                            color: white;
+                                            /* margin-left: 120px; */
+                                            margin-top: 1px;
+                                            padding: 0.85vw 1.2vw;
+                                            border-top-right-radius: 30% 30%;
+                                            border-radius: 0 20px 20px 0;
+                                        }
+
+                                        form p>* {
+                                            margin: 1.8vw 1.5vw 1.8vw 0.6vw;
+                                        }
+
+                                        form p button {
+                                            padding: 0vw 1.8vw 0 0vw;
+                                            background: none;
+                                            border: solid 3px lightgrey;
+                                            border-radius: 2vw;
+                                            font-size: 1.25vw;
+                                            font-weight: bold;
+                                            border-left: none;
+                                            margin: 2vw .8vw;
+                                        }
+
+                                        form p button i {
+                                            border-radius: 2vw;
+                                            background: #DEEBFF;
+                                            color: #0065FC;
+                                            padding: 1vw;
+                                            margin: 0 0.6vw 0 -.1vw;
+                                        }
+
+                                        body>section:nth-child(2)>p:nth-child(4) {
+                                            font-size: 1.12vw;
+                                        }
+
+                                        body>section:nth-child(2)>p:nth-child(4)>i {
+                                            border: solid 1px lightgrey;
+                                            font-size: .8vw;
+                                            color: #0065FC;
+                                            padding: .4vw .6vw;
+                                            border-radius: 2vw;
+                                            margin: 0 .8vw 0 .3vw;
+                                        }
+
+                                        /*Div centrale : hébergement & aside*/
+
                                         div {
                                             display: flex;
                                             flex-wrap: wrap;
                                         }
+
+                                        /*Hébergements*/
 
                                         section#hebergements {
                                             flex: 2;
@@ -97,9 +184,13 @@ SOMMAIRE
                                             flex-basis: 30%;
                                         }
 
+                                        /*aside*/
+
                                         aside h2 i {
                                             justify-self: flex-end;
                                         }
+
+                                        /*activités*/
 
                                         section#activites {
                                             display: flex;
@@ -109,6 +200,8 @@ SOMMAIRE
                                         section#activites h2 {
                                             flex-basis: 100%;
                                         }
+
+                                        /*footer*/
 
                                         footer {
                                             display: flex;
