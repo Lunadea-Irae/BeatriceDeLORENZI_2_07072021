@@ -12,6 +12,12 @@ SOMMAIRE
 
                                         /*Mise a 0 des marges par défaut et du font demandé*/
 
+                                        :root {
+                                            --bleufonce: #0065fc;
+                                            --bleuclair: #DEEBFF;
+                                            --grisdefond: #f2f2f2;
+                                        }
+
                                         * {
                                             margin: 0;
                                             padding: 0;
@@ -64,16 +70,16 @@ SOMMAIRE
                                         }
 
                                         header nav ul li:hover {
-                                            border-top: #0065FC solid 2px;
+                                            border-top: var(--bleufonce) solid 2px;
                                         }
 
                                         header nav ul li:hover a {
-                                            color: #0065FC;
+                                            color: var(--bleufonce);
                                         }
 
                                         header nav ul li:last-child a {
                                             font-weight: bolder;
-                                            color: #0065FC;
+                                            color: var(--bleufonce);
                                         }
 
                                         /*Section 1 : section de recherche*/
@@ -101,26 +107,35 @@ SOMMAIRE
 
                                         form i {
                                             padding: 1.1vw 1.2vw;
-                                            background: #F2F2F2;
+                                            background: var(--grisdefond);
                                             border-bottom-left-radius: 30%;
                                             border-top-left-radius: 30%;
                                         }
 
                                         form input[type="search"] {
-                                            margin: 0 0vw 0px -0.5vw;
+                                            margin: 0 -.3vw 0px -0.5vw;
                                             padding: 0.8vw 0.9vw;
-                                            border: #f2f2f2 solid 1px;
+                                            border: var(--grisdefond) solid 1px;
+                                            font-weight: bold;
                                         }
 
-                                        form input[type="submit"] {
-                                            background-color: #0065FC;
+                                        button[type="submit"] {
+                                            border: none;
+                                            background: none;
+                                        }
+
+                                        button[type="submit"]>span {
+                                            background-color: var(--bleufonce);
                                             border: none;
                                             color: white;
-                                            /* margin-left: 120px; */
                                             margin-top: 1px;
                                             padding: 0.85vw 1.2vw;
                                             border-top-right-radius: 30% 30%;
                                             border-radius: 0 20px 20px 0;
+                                        }
+
+                                        button[type="submit"]>i {
+                                            display: none;
                                         }
 
                                         form p>* {
@@ -139,14 +154,14 @@ SOMMAIRE
                                         }
 
                                         form p button:hover {
-                                            background: #0065fc;
+                                            background: var(--bleufonce);
                                             color: white;
                                         }
 
                                         form p button i {
                                             border-radius: 2vw;
-                                            background: #DEEBFF;
-                                            color: #0065FC;
+                                            background: var(--bleuclair);
+                                            color: var(--bleufonce);
                                             padding: 1vw;
                                             margin: 0 0.6vw 0 -.1vw;
                                         }
@@ -158,7 +173,7 @@ SOMMAIRE
                                         body>section:nth-child(2)>p:nth-child(4)>i {
                                             border: solid 1px lightgrey;
                                             font-size: .8vw;
-                                            color: #0065FC;
+                                            color: var(--bleufonce);
                                             padding: .4vw .6vw;
                                             border-radius: 2vw;
                                             margin: 0 .8vw 0 .3vw;
@@ -217,10 +232,11 @@ SOMMAIRE
                                         /*SMARTPHONES ET TABLETTES*/
 
                                         @media screen and (max-width:425px) {
-                                         /*   body {
+                                            body {
                                                 background-image: url("iPhone 8 - 1.png");
                                                 background-size: cover;
-                                            }*/
+                                            }
+                                            /*Header smartphone*/
                                             header {
                                                 display: block;
                                                 margin: 0;
@@ -237,10 +253,10 @@ SOMMAIRE
                                                 flex-basis: 50%;
                                                 text-align: center;
                                                 padding: 5.3vw 6vw 3.6vw;
-                                                border-bottom: solid 4px #f2f2f2;
+                                                border-bottom: solid 4px var(--grisdefond);
                                             }
                                             header nav ul li:hover {
-                                                border-bottom: solid 4px #0065FC;
+                                                border-bottom: solid 4px var(--bleufonce);
                                                 border-top: none;
                                             }
                                             header nav ul li:last-child {
@@ -250,13 +266,89 @@ SOMMAIRE
                                                 border-bottom: none;
                                                 margin-top: 5vw;
                                             }
+                                            /*Section de recherche*/
+                                            section:nth-child(2) {
+                                                margin: 8vw 5.8vw;
+                                            }
+                                            h1 {
+                                                font-size: 5.9vw;
+                                                line-height: 7.1vw;
+                                            }
+                                            p {
+                                                font-size: 4.2vw;
+                                                margin: 3.2vw 0px;
+                                            }
+                                            form {
+                                                margin: 8.5vw 0 0 0;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: flex-start;
+                                            }
+                                            form i {
+                                                padding: 5.1vw 5.2vw;
+                                                background: var(--grisdefond);
+                                                border-bottom-left-radius: 30%;
+                                                border-top-left-radius: 30%;
+                                            }
+                                            form>*, form p>button {
+                                                font-size: 4.3vw;
+                                            }
+                                            form input[type="search"] {
+                                                border: var(--grisdefond) solid 1px;
+                                                font-weight: bold;
+                                                flex: 1;
+                                            }
+                                            button[type="submit"]>i {
+                                                display: block;
+                                                background-color: var(--bleufonce);
+                                                border: none;
+                                                color: white;
+                                                margin-top: 1px;
+                                                margin-left: -2vw;
+                                                padding: 5vw;
+                                                border-radius: 4vw;
+                                            }
+                                            button[type="submit"]>span {
+                                                display: none;
+                                            }
                                             section:nth-child(2) form p {
                                                 display: flex;
                                                 flex-wrap: wrap;
+                                                margin: 5.8vw 1vw 0 1vw;
+                                                font-weight: bold;
+                                                font-size: 5vw;
+                                                justify-content: space-between;
                                             }
                                             section:nth-child(2) form p span {
                                                 flex-basis: 100%;
                                             }
+                                            body>section:nth-child(2)>form>p>button {
+                                                border-radius: 6vw;
+                                                padding-right: 5vw;
+                                                margin-bottom: 1.5vw;
+                                            }
+                                            body>section:nth-child(2)>form>p>button>i {
+                                                font-size: 5.5vw;
+                                                padding: 4vw;
+                                                border-radius: 7vw;
+                                                margin: -3px 2vw -3px -3vw;
+                                            }
+                                            body>section:nth-child(2)>p:nth-child(4) {
+                                                margin: 7vw 0;
+                                                padding: 0 0 0 9vw;
+                                                font-size: 4vw;
+                                                letter-spacing: .13vw;
+                                                line-height: 3vw;
+                                            }
+                                            body>section:nth-child(2)>p:nth-child(4)>i {
+                                                border: solid 1px lightgrey;
+                                                font-size: 3.2vw;
+                                                color: var(--bleufonce);
+                                                padding: 1.4vw 2vw;
+                                                border-radius: 5vw;
+                                                margin: 0 2vw 0 -9.2vw;
+                                            }
+                                            /*hebergements*/
                                             div section#hebergements {
                                                 order: 1;
                                             }
