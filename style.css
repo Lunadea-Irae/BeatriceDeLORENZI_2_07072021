@@ -123,6 +123,7 @@ SOMMAIRE
                                             border: none;
                                             background: none;
                                             margin-left: -6px;
+                                            cursor: pointer;
                                         }
 
                                         button[type="submit"]>span {
@@ -153,6 +154,7 @@ SOMMAIRE
                                             border-left: none;
                                             margin: 1vw;
                                             padding-right: 1vw;
+                                            cursor: pointer;
                                         }
 
                                         form p button:hover {
