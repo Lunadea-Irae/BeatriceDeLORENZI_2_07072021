@@ -264,7 +264,7 @@ SOMMAIRE
                                         section#hebergements a:last-child {
                                             background: none;
                                             box-shadow: none;
-                                            font-size: 1.2vw;
+                                            font-size: 1.1vw;
                                             font-weight: 800;
                                             margin-bottom: 0;
                                         }
@@ -321,13 +321,53 @@ SOMMAIRE
 
                                         /*activités*/
 
-                                        section#activites {
+                                        body>h2 {
+                                            margin: 3vw 0 0 0;
+                                        }
+
+                                        #activites {
+                                            display: flex;
+                                            margin: 1vw 0;
+                                            justify-content: space-between;
+                                            flex-direction: column;
+                                            flex-wrap: wrap;
+                                            height: 24vw;
+                                        }
+
+                                        #activites a {
+                                            width: 23%;
+                                            box-shadow: 0 0 15px -8px;
+                                            border-radius: 1vw;
+                                        }
+
+                                        #activites article {
                                             display: flex;
                                             flex-wrap: wrap;
                                         }
 
-                                        section#activites h2 {
-                                            flex-basis: 100%;
+                                        #activites img {
+                                            height: 11vw;
+                                            object-fit: cover;
+                                            border-radius: 1vw;
+                                        }
+
+                                        #activites>a:nth-child(1), #activites>a:nth-child(1)>article>img, #activites>a:nth-child(4), #activites>a:nth-child(4)>article>img {
+                                            height: 24vw;
+                                        }
+
+                                        #activites>a:nth-child(2), #activites>a:nth-child(2)>article>img, #activites>a:nth-child(6), #activites>a:nth-child(6)>article>img {
+                                            height: 13vw;
+                                        }
+
+                                        #activites>a:nth-child(3), #activites>a:nth-child(3)>article>img, #activites>a:nth-child(5), #activites>a:nth-child(5)>article>img {
+                                            height: 9vw;
+                                        }
+
+                                        #activites h3 {
+                                            background: white;
+                                            margin: -3vw 0 0 0;
+                                            padding: 1vw;
+                                            border-radius: 0 0 1vw 1vw;
                                         }
 
                                         /*footer*/
@@ -336,6 +376,13 @@ SOMMAIRE
                                             display: flex;
                                             flex-wrap: wrap;
                                             justify-content: space-between;
+                                            background: var(--grisdefond);
+                                            margin: 2vw -3vw;
+                                            padding: 3vw;
+                                        }
+
+                                        footer ul {
+                                            padding-inline: 0;
                                         }
 
                                         /*SMARTPHONES ET TABLETTES*/
@@ -469,7 +516,7 @@ SOMMAIRE
                                             div section#hebergements {
                                                 order: 1;
                                             }
-                                            section#hebergements a, section#activites a, footer nav {
+                                            section#hebergements a, #activites a, footer nav {
                                                 flex-basis: 100%;
                                             }
                                         }
