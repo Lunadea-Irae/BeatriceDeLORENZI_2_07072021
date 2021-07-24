@@ -39,7 +39,9 @@ SOMMAIRE
                                         /*----------------------------- A RETIRER -----------------------------*/
 
                                         body {
-                                            margin: 0 15%;
+                                            max-width: 1350px;
+                                            margin: auto;
+                                            padding: 4vw;
                                         }
 
                                         /*HEADER*/
@@ -80,7 +82,10 @@ SOMMAIRE
                                             font-weight: bolder;
                                             color: var(--bleufonce);
                                         }
-                                        header nav ul li:last-child:hover{border: none;}
+
+                                        header nav ul li:last-child:hover {
+                                            border: none;
+                                        }
 
                                         /*Section 1 : section de recherche*/
 
@@ -403,6 +408,7 @@ SOMMAIRE
                                         @media screen and (max-width:425px) {
                                             body {
                                                 margin: 0;
+                                                padding: 0;
                                             }
                                             /*Header smartphone*/
                                             header {
@@ -525,11 +531,110 @@ SOMMAIRE
                                                 border-radius: 5vw;
                                                 margin: 0 2vw 0 -9.2vw;
                                             }
+                                            /*aside*/
+                                            aside {
+                                                flex-basis: 100%;
+                                                height: 119vw;
+                                                align-content: space-evenly;
+                                                padding: 5vw 2vw;
+                                            }
+                                            h2 {
+                                                font-size: 5vw;
+                                                padding-bottom: 2vw;
+                                            }
+                                            aside h2 {
+                                                padding: 0 3vw 2vw;
+                                            }
+                                            aside *:not(h2) {
+                                                margin-right: 7vw;
+                                            }
+                                            aside a article, section#hebergements a {
+                                                border-radius: 4vw;
+                                                padding: 1vw;
+                                                box-shadow: 0 0 19px -13px;
+                                                ;
+                                            }
+                                            aside a article {
+                                                height: 28vw;
+                                                width: calc( 100% - 20vw);
+                                                padding: 2vw 5vw 2vw 9vw;
+                                                margin: auto;
+                                            }
+                                            aside img {
+                                                width: 28vw;
+                                                height: 28vw;
+                                                border-radius: 4vw 0 0 4vw;
+                                            }
+                                            h3 {
+                                                font-size: 4vw;
+                                                margin: 0vw 0vw 0vw 26vw;
+                                            }
+                                            section#hebergements a article p, aside a article p {
+                                                font-size: 3.5vw;
+                                                margin: 0 0 0 26vw;
+                                            }
+                                            .fa-star {
+                                                font-size: 2.7vw;
+                                            }
+                                            .fa-star:first-of-type {
+                                                margin-left: 26vw;
+                                            }
                                             /*hebergements*/
                                             div section#hebergements {
                                                 order: 1;
-                                            }
-                                            section#hebergements a, #activites a, footer nav {
                                                 flex-basis: 100%;
+                                                background: none;
+                                                padding: 7vw;
+                                            }
+                                            section#hebergements img {
+                                                height: 33vw;
+                                                border-radius: 4vw 4vw 0 0;
+                                            }
+                                            section#hebergements h3, section#hebergements a article p, section#hebergements .fa-star:first-of-type {
+                                                margin: 0 0 0 3vw;
+                                            }
+                                            section#hebergements a:last-child {
+                                                margin-top: 4vw;
+                                                font-size: 4vw;
+                                            }
+                                            section#hebergements a, #activites a {
+                                                flex-basis: 100%;
+                                            }
+                                            section#activites {
+                                                display: block;
+                                                height: auto;
+                                                padding: 0vw 7vw 10vw;
+                                            }
+                                            section#activites a article {
+                                                margin: 6vw 0 0 0;
+                                                box-shadow: 0 0 19px -13px;
+                                                border-radius: 4vw;
+                                            }
+                                            section#activites img {
+                                                height: 46vw!important;
+                                                border-radius: 4vw;
+                                            }
+                                            body>h2 {
+                                                padding-left: 7vw;
+                                            }
+                                            #activites h3 {
+                                                padding: 5vw;
+                                                border-radius: 0 0 4vw 4vw;
+                                                margin-top: -13vw;
+                                            }
+                                            footer {
+                                                display: block;
+                                                margin: 2vw 0;
+                                                padding: 10vw 7vw;
+                                            }
+                                            h4 {
+                                                font-size: 5vw;
+                                            }
+                                            footer nav {
+                                                margin-bottom: 11vw;
+                                            }
+                                            footer ul {
+                                                line-height: 7vw;
+                                                font-size: 4vw;
                                             }
                                         }
