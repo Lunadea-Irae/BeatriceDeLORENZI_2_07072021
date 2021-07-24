@@ -151,7 +151,7 @@ SOMMAIRE
                                         form p>* {
                                             font-size: 1vw;
                                             margin-right: 1vw;
-                                            font-weight: 800;
+                                            font-weight: 700;
                                         }
 
                                         form p button {
@@ -270,7 +270,7 @@ SOMMAIRE
                                         section#hebergements a:last-child {
                                             background: none;
                                             box-shadow: none;
-                                            font-size: 1.1vw;
+                                            font-size: 1vw;
                                             font-weight: 800;
                                             margin-bottom: 0;
                                         }
