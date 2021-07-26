@@ -407,7 +407,7 @@ SOMMAIRE
                                         }
 
                                         footer ul {
-                                            padding-inline: 0;
+                                            padding-inline-start: 0;
                                             line-height: 1.6vw;
                                             font-size: .8vw;
                                         }
@@ -637,7 +637,6 @@ SOMMAIRE
                                                 border-radius: 0 0 4vw 4vw;
                                                 margin-top: -13vw;
                                             }
-
                                             /*Footer smartphones*/
                                             footer {
                                                 display: block;
@@ -664,7 +663,6 @@ SOMMAIRE
                                             header nav ul {
                                                 font-size: 2.5vw;
                                             }
-
                                             /*Recherche tablettes*/
                                             h1 {
                                                 font-size: 2.5vw;
