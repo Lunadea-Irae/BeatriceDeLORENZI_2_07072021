@@ -1,22 +1,34 @@
                                         /*
 SOMMAIRE
-    * 10
+    * 33
 
-    DESKTOP
-        Header
-            ul
-                li
-        section
-
-*/
+    DESKTOP 55 
+        Header 55 
+        section => recherche 98
+        div 199
+            section => #hebergements 207
+            aside 297
+        section => #activites 337
+        footer 388
+    MOBILE 417
+        Header 422
+        section => recherche 453
+        div 543
+            aside 544
+            section => #hebergements 596
+        section => #activites 617
+        footer 641
+    TABLETTES 659
+        Header 660
+        section => recherche 668
+        div 689
+            section => #hebergements 690
+            aside 716
+        section => #activites 746
+        footer 759
+        */
 
                                         /*Mise a 0 des marges par défaut et du font demandé*/
-
-                                        :root {
-                                            --bleufonce: #0065fc;
-                                            --bleuclair: #DEEBFF;
-                                            --grisdefond: #f2f2f2;
-                                        }
 
                                         * {
                                             margin: 0;
@@ -29,14 +41,10 @@ SOMMAIRE
                                             color: black;
                                         }
 
-                                        /*----------------------------- A RETIRER -----------------------------*/
-
                                         section img {
                                             object-fit: contain;
                                             width: 100%;
                                         }
-
-                                        /*----------------------------- A RETIRER -----------------------------*/
 
                                         body {
                                             max-width: 1350px;
@@ -71,16 +79,16 @@ SOMMAIRE
                                         }
 
                                         header nav ul li:hover {
-                                            border-top: var(--bleufonce) solid 2px;
+                                            border-top: #0065fc solid 2px;
                                         }
 
                                         header nav ul li:hover a {
-                                            color: var(--bleufonce);
+                                            color: #0065fc;
                                         }
 
                                         header nav ul li:last-child a {
                                             font-weight: bolder;
-                                            color: var(--bleufonce);
+                                            color: #0065fc;
                                         }
 
                                         header nav ul li:last-child:hover {
@@ -113,7 +121,7 @@ SOMMAIRE
                                         }
 
                                         form i {
-                                            background: var(--grisdefond);
+                                            background: #f2f2f2;
                                             border-bottom-left-radius: .8vw;
                                             border-top-left-radius: .8vw;
                                             padding: .8vw;
@@ -123,7 +131,7 @@ SOMMAIRE
                                         form input[type="search"] {
                                             margin: 0px -4px;
                                             padding: 0.6vw 0.9vw;
-                                            border: var(--grisdefond) solid 1px;
+                                            border: #f2f2f2 solid 1px;
                                             font-weight: bold;
                                         }
 
@@ -135,7 +143,7 @@ SOMMAIRE
                                         }
 
                                         button[type="submit"]>span {
-                                            background-color: var(--bleufonce);
+                                            background-color: #0065fc;
                                             border: none;
                                             color: white;
                                             margin-top: 1px;
@@ -166,14 +174,14 @@ SOMMAIRE
                                         }
 
                                         form p button:hover {
-                                            background: var(--bleufonce);
+                                            background: #0065fc;
                                             color: white;
                                         }
 
                                         form p button i {
                                             border-radius: 2vw;
-                                            background: var(--bleuclair);
-                                            color: var(--bleufonce);
+                                            background: #DEEBFF;
+                                            color: #0065fc;
                                             margin: -3px 0.6vw -3px -1.6vw;
                                             width: 1vw;
                                             height: 1vw;
@@ -182,7 +190,7 @@ SOMMAIRE
                                         body>section:nth-child(2)>p:nth-child(4)>i {
                                             border: solid 1px lightgrey;
                                             font-size: .6vw;
-                                            color: var(--bleufonce);
+                                            color: #0065fc;
                                             padding: .4vw .6vw;
                                             border-radius: 2vw;
                                             margin-right: .3vw;
@@ -255,7 +263,7 @@ SOMMAIRE
 
                                         .fa-star {
                                             font-size: 0.7vw;
-                                            color: var(--bleufonce);
+                                            color: #0065fc;
                                             letter-spacing: -.2vw;
                                             margin: .5vw 0;
                                         }
@@ -281,7 +289,7 @@ SOMMAIRE
                                         aside {
                                             display: flex;
                                             flex-basis: 26%;
-                                            background: var(--grisdefond);
+                                            background: #f2f2f2;
                                             padding: 2vw;
                                             border-radius: 1vw;
                                             flex-wrap: wrap;
@@ -383,7 +391,7 @@ SOMMAIRE
                                             display: flex;
                                             flex-wrap: wrap;
                                             justify-content: space-between;
-                                            background: var(--grisdefond);
+                                            background: #f2f2f2;
                                             margin: 2vw -3vw;
                                             padding: 2vw 3vw;
                                         }
@@ -429,10 +437,10 @@ SOMMAIRE
                                                 flex-basis: 50%;
                                                 text-align: center;
                                                 padding: 6.3vw 6vw 3.6vw;
-                                                border-bottom: solid 4px var(--grisdefond);
+                                                border-bottom: solid 4px #f2f2f2;
                                             }
                                             header nav ul li:hover {
-                                                border-bottom: solid 4px var(--bleufonce);
+                                                border-bottom: solid 4px #0065fc;
                                                 border-top: none;
                                             }
                                             header nav ul li:last-child {
@@ -442,7 +450,7 @@ SOMMAIRE
                                                 border-bottom: none;
                                                 margin-top: 4vw;
                                             }
-                                            /*Section de recherche*/
+                                            /*Section de recherche smartphone*/
                                             section:nth-child(2) {
                                                 margin: 8vw 5.8vw;
                                             }
@@ -462,7 +470,7 @@ SOMMAIRE
                                             }
                                             form i {
                                                 padding: 5vw 5.5vw;
-                                                background: var(--grisdefond);
+                                                background: #f2f2f2;
                                                 border-bottom-left-radius: 30%;
                                                 border-top-left-radius: 30%;
                                                 font-size: 4.5vw;
@@ -471,7 +479,7 @@ SOMMAIRE
                                                 font-size: 4.3vw;
                                             }
                                             form input[type="search"] {
-                                                border: var(--grisdefond) solid 1px;
+                                                border: #f2f2f2 solid 1px;
                                                 font-weight: 900;
                                                 flex: 1;
                                                 padding-left: 4vw;
@@ -479,7 +487,7 @@ SOMMAIRE
                                             }
                                             button[type="submit"]>i {
                                                 display: block;
-                                                background-color: var(--bleufonce);
+                                                background-color: #0065fc;
                                                 border: none;
                                                 color: white;
                                                 margin: -2px -7px -3px -2vw;
@@ -527,12 +535,13 @@ SOMMAIRE
                                             body>section:nth-child(2)>p:nth-child(4)>i {
                                                 border: solid 1px lightgrey;
                                                 font-size: 3.2vw;
-                                                color: var(--bleufonce);
+                                                color: #0065fc;
                                                 padding: 1.1vw 2vw;
                                                 border-radius: 5vw;
                                                 margin: 0 2vw 0 -9.2vw;
                                             }
-                                            /*aside*/
+                                            /*div smartphones*/
+                                            /*aside smartphones*/
                                             aside {
                                                 flex-basis: 100%;
                                                 height: 145vw;
@@ -584,7 +593,7 @@ SOMMAIRE
                                             .fa-star:first-of-type {
                                                 margin-left: 33vw;
                                             }
-                                            /*hebergements*/
+                                            /*hebergements smartphones*/
                                             div section#hebergements {
                                                 order: 1;
                                                 flex-basis: 100%;
@@ -605,6 +614,7 @@ SOMMAIRE
                                             section#hebergements a, #activites a {
                                                 flex-basis: 100%;
                                             }
+                                            /*Activites smartphones*/
                                             section#activites {
                                                 display: block;
                                                 height: auto;
@@ -627,6 +637,8 @@ SOMMAIRE
                                                 border-radius: 0 0 4vw 4vw;
                                                 margin-top: -13vw;
                                             }
+
+                                            /*Footer smartphones*/
                                             footer {
                                                 display: block;
                                                 margin: 2vw 0;
@@ -645,12 +657,15 @@ SOMMAIRE
                                         }
 
                                         @media screen and (min-width:426px) and (max-width:1365px) {
+                                            /*HEADER Tablettes*/
                                             header img {
                                                 height: 6vw;
                                             }
                                             header nav ul {
                                                 font-size: 2.5vw;
                                             }
+
+                                            /*Recherche tablettes*/
                                             h1 {
                                                 font-size: 2.5vw;
                                             }
@@ -671,6 +686,8 @@ SOMMAIRE
                                                 width: 2vw;
                                                 height: 2vw;
                                             }
+                                            /*DIV centrale tablette
+                                            section hébergements tablettes*/
                                             h2 {
                                                 font-size: 2.5vw;
                                             }
@@ -696,6 +713,7 @@ SOMMAIRE
                                             section#hebergements a:last-child {
                                                 font-size: 2vw;
                                             }
+                                            /*aside tablettes*/
                                             aside {
                                                 flex-basis: 30%;
                                                 align-content: flex-start;
@@ -725,6 +743,7 @@ SOMMAIRE
                                             aside>h2 {
                                                 padding-bottom: 1vw;
                                             }
+                                            /*Activites Tablettes*/
                                             #activites {
                                                 height: 32vw;
                                             }
@@ -737,9 +756,9 @@ SOMMAIRE
                                             #activites>a:nth-child(3), #activites>a:nth-child(3)>article>img, #activites>a:nth-child(5), #activites>a:nth-child(5)>article>img {
                                                 height: 12vw;
                                             }
-
-                                            footer{
-                                                margin-top:4vw;
+                                            /*Footer Tablettes*/
+                                            footer {
+                                                margin-top: 4vw;
                                             }
                                             h4 {
                                                 font-size: 2vw;
