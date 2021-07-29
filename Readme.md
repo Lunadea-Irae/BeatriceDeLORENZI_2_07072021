@@ -1,21 +1,18 @@
-Scénario
+    Scénario
+
 Enfin, vous avez trouvé votre premier stage en tant que développeur web chez Reservia, une petite entreprise proposant un outil de planification de vacances. Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
-
+![Desktop - 1](https://user-images.githubusercontent.com/39220169/127473539-79e989d7-277f-4695-970d-e65cd26f8022.png)
+![iPhone 8 - 1](https://user-images.githubusercontent.com/39220169/127473550-efe396e9-80d6-4629-a7a0-2220b1ebde57.png)
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
 De : Loïc
-
 À : Vous
-
 CC : Sarah
-
 Objet : Intégration maquette Reservia
-
 Bonjour ! 😀
-
 Je t’envoie les nouvelles maquettes desktop et mobiles du site Reservia. Le dossier comprend aussi les images. Voici quelques précisions qui te seront utiles pour l’intégration.
 
     Fonctionnalités
@@ -33,24 +30,18 @@ Comme je ne savais pas de quels tailles et formats d’image tu avais besoin, j�
 Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
 La police du site est Raleway.
  
-
 Si tu as des questions n’hésite pas à m’écrire.
-
 Bonne journée!
 
 
 Vous vous plongez dans ce projet… Et commencez à vous poser quelques questions techniques sur l’intégration. Heureusement, votre manager rebondit sur l’échange de mails pour vous apporter des précisions !
 
 De : Sarah
-
 À : Vous
-
 CC : Loïc
-
-Objet : RE - Intégration maquette Reservia
+Objet : RE - Intégration maquette Reservia!!
 
 Hello,
-
 J’espère que les premiers éléments partagés par Loïc te semblent clairs ! Comme c’est ton premier projet avec nous et que tu es en stage, je voulais te guider un peu plus :
 
 N’utilise pas de framework ou pré-compilateur CSS pour ce projet (comme SASS par exemple) : comme tu démarres, je préfère que tu montes en compétences sur HTML et CSS et que tu apprennes à coder from scratch. On aimerait tester tes compétences là-dessus !
